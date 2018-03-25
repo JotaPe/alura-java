@@ -1,10 +1,10 @@
-package controller;
+package model;
 
 public class Conta {
 	private double saldo;
 	int agencia;
 	int numero;
-	Cliente titular;
+	String titular;
 	
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -26,5 +26,8 @@ public class Conta {
 	}
 	public double consulta() {
 		return this.saldo;
+	}
+	public double getSaldo() {
+		return saldo;
 	}
 }
